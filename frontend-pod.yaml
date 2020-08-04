@@ -7,6 +7,8 @@ metadata:
 spec:
     containers:
         - name: frontend
-          image: i11f2jz8e7/test-frontend-k8s
+          image: i11f2jz8e7/test-frontend-k8s:2
           ports:
             - containerPort: 3000
+    imagePullSecrets:
+        - name: regcred
