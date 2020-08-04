@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: frontend-pod
+    labels:
+        component: frontend
+spec:
+    containers:
+        - name: frontend
+          image: i11f2jz8e7/test-frontend-k8s
+          ports:
+            - containerPort: 3000
